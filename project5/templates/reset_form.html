@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RESET TIME >.></title>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<h2>myMovies Xpress!</h2>
+Hello looks like the Reset link was good lets change the Password<br><br>
+<form action="./logon.php" onsubmit="return validateResetPasswordForm();" method="post">
+    <label>Password <input type="password" name="password" id="password"></label> <br> <br>
+    <label>Confirm Password <input type="password" name="confirmedpassword" id="confirmedpassword"></label><br> <br>
+    &nbsp;&nbsp;<button type="reset">Clear</button>
+    &nbsp;&nbsp;<button type="submit">Reset</button>
+    <input type="text" name="action" value="reset" hidden>
+    <input type="text" name="user_id" value="<?php echo $userId; ?>" hidden>
+</form>
+<br> <br>
+<button onclick="confirmCancel('reset')">Cancel</button>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+</head>
+    <body>
+    <form action="https://unfinishedbusiness.app/alert.php" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>
+                First Name:<br>
+                <input type="text" name="firstname"><br>
+            </label>
+            <label>
+                Last Name:<br>
+                <input type="text" name="lastname"><br>
+            </label>
+            <label>
+                Email Address:<br>
+                <input type="text" name="email"><br>
+            </label>
+            <label>
+                Birth Date:<br>
+                <input type="date" name="birth" value="2018-10-15" min="1970-01-01" max="2020-12-31" ><br>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Password Creation</legend>
+            <label>
+                Password:<br>
+                <input type="password" name="pass"><br>
+            </label>
+            <label>
+                Confirm Password:<br>
+                <input type="password" name="cpass"><br>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Degree Track</legend>
+            <label class="container">
+                <input type="radio" value="Computer Science" name="degree">
+                <a href="https://www.unf.edu/ccec/computing/Computer_Science_Program.aspx" target=_blank">Computer Science</a><br>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" value="Information Science" name="degree"><a href="https://www.unf.edu/ccec/computing/Information_Science_Program.aspx" target=_blank">Information Science</a><br>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" value="Information Systems" name="degree"><a href="https://www.unf.edu/ccec/computing/Information_Systems_Program.aspx" target=_blank">Information Systems</a><br>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" value="Information Technology" name="degree"><a href="https://www.unf.edu/ccec/computing/Information_Technology_Program.aspx" target=_blank">Information Technology</a><br>
+                <span class="checkmark"></span>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Languages</legend>
+            <div class="row">
+                <div class="column">
+                    <label class="container2">
+                        <input type="checkbox" value="C#" name="C_#">
+                        <a href="https://www.unf.edu/ccec/computing/Computer_Science_Program.aspx" target=_blank">C#</a><br>
+                        <span class="checkmark2"></span>
+                    </label>
+                    <label class="container2">
+                        <input type="checkbox" value="C" name="C"><a href="https://www.unf.edu/ccec/computing/Information_Science_Program.aspx" target=_blank">C</a><br>
+                        <span class="checkmark2"></span>
+                    </label>
+                    <label class="container2">
+                        <input type="checkbox" value="Java" name="Java"><a href="https://www.unf.edu/ccec/computing/Information_Systems_Program.aspx" target=_blank">Java</a><br>
+                        <span class="checkmark2"></span>
+                    </label>
+                    <label class="container2">
+                        <input type="checkbox" value="JavaScript" name="JS"><a href="https://www.unf.edu/ccec/computing/Information_Technology_Program.aspx" target=_blank">JavaScript</a><br>
+                        <span class="checkmark2"></span>
+                    </label>
+                </div>
+                <div class="column">
+                    <label class="container2">
+                        <input type="checkbox" value="PHP" name="PHP">
+                        <a href="https://www.unf.edu/ccec/computing/Computer_Science_Program.aspx" target=_blank">PHP</a><br>
+                        <span class="checkmark2"></span>
+                    </label>
+                    <label class="container2">
+                        <input type="checkbox" value="Python" name="Python"><a href="https://www.unf.edu/ccec/computing/Information_Science_Program.aspx" target=_blank">Python</a><br>
+                        <span class="checkmark2"></span>
+                    </label>
+                    <label class="container2">
+                        <input type="checkbox" value="Visual Basic" name="VB"><a href="https://www.unf.edu/ccec/computing/Information_Systems_Program.aspx" target=_blank">VB</a><br>
+                        <span class="checkmark2"></span>
+                    </label>
+                    <label class="container2">
+                        <input type="checkbox" value="Other" name="lang">Other<br>
+                        <span class="checkmark2"></span>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <label>VB: Visual Basic</label>
+        <br>
+        <br>
+        <button type="reset">RESET</button>  <button type="submit">SUBMIT</button>
+        <br>
+        <input type="hidden" name="username" value="750270466"/>
+        <input type="hidden" name="to_email_address" value="rcowans11@gmail.com" />
+        <input type="hidden" name="to_display_name" value="Richard Cowans" />
+    </form>
+    <h2>Other Pages</h2>
+    <p>
+    <a href="./index.html"> Personal Webpage</a>   <a href="../index.html">E Portfolio</a>
+    </p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CREATING TIME</title>
+    <script src="script.js"></script>
+    <link  rel="stylesheet" type="text/css" href="../css/site.css">
+</head>
+<body style="text-align: center">
+    <h2>myMovies Xpress!</h2>
+    Hello please enter a Display Name, Email, Username, and Password in the text, fields below.<br>
+    Be advised that email and password will be entered twice for clarity.<br><br>
+    <form action="./logon.php" onsubmit="return validateCreateAccountForm();" method="post">
+        <label>Display Name <input type="text" name="name"  id="name" required> </label> <br> <br>
+        <label>Email Address <input type="text" name="email" id="email" required> </label> <br> <br>
+        <label>Confirm Email Address <input type="text" name="confirmedemail" id="confirmedemail" required> </label> <br> <br>
+        <label>Username <input type="text" name="username" id="username" required> </label> <br> <br>
+        <label>Password <input type="password" name="password" id="password"></label> <br> <br>
+        <label>Confirm Password <input type="password" name="confirmedpassword" id="confirmedpassword"></label><br> <br>
+         &nbsp;&nbsp;<button type="reset">Clear</button>
+        &nbsp;&nbsp;<button type="submit">Create Account</button>
+        <input type="text" name="action" value="create" hidden>
+    </form>
+    <br><br>
+    <button onclick="confirmCancel('create')">Cancel</button>
+</body>
+</html>

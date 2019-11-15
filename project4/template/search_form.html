@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Searching :)</title>
+        <link rel="stylesheet" type="text/css" href="../css/site.css">
+        <script src="script.js"></script>
+    </head>
+    <div style="position:absolute;left:0;top: 0;">
+        <?php echo "Welcome ",$_SESSION["displayName"]; ?>
+        <button id="p4B" onclick="confirmLogOut()">(Logout)</button>
+    </div>
+    <br><br>
+    <body id="p4" style="text-align: center">
+        <h2>myMovie Xpress!</h2>
+        <form action="./search.php" method="post">
+            <label>
+                Keyword <input type="text" name="search" id="search" required>
+            </label>
+            <br><br>
+            <div class="column2">
+            <button type="submit">Search</button>
+            <button type="reset">Clear</button>
+            </div>
+        </form>
+        <br>
+        <div class="column2">
+        <button><a href="./index.php" style="text-decoration: none;color: black; float: right">Cancel Search</a></button>
+            </div>
+    </body>
+</html>

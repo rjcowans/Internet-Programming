@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php if (!$forEmail) { ?>
+    <title>Movie Cart ^o^</title>
+    <?php } ?>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <script src="script.js"></script>
+</head>
+<div style="position:absolute;left:0;top: 0;">
+    <?php if (!$forEmail) {
+    echo "Welcome ", $_SESSION["displayName"]; ?>
+    <button class="p4B" onclick="confirmLogOut()">(Logout)</button>
+    <div id='modalWindow' class='modal'>
+        <div id='modalWindowContent' class='modal-content'>
+        </div>
+    </div>
+    <?php } ?>
+</div>
+
+<body id="p4" style="text-align: center">
+<h2>myMovie Xpress!</h2>
+<?php echo $counter ?> Movies in your Shopping Cart
+
+<label>
+    <br>
+    <?php if (!$forEmail) { ?>
+    Select Order <select id='select_order' onchange='changeMovieDisplay();'>
+    <option value="0" selected>Movie Title</option>
+    <option value="1">Runtime (shortest -> longest )</option>
+    <option value="2">Runtime (longest -> shortest )</option>
+    <option value="3">Year (old -> new)</option>
+    <option value="4">Year (new -> old)</option>
+</select>
+</label>
+<?php } ?>
+<div id="shopping_cart">
+    <?php if ($counter !== '0') {
+    echo $message2;
+} else { ?>
+    <br><br>
+    Add Some Movies to Your Cart
+    <?php } ?>
+</div>
+<br>
+<?php if (!$forEmail){ ?>
+<div class="row">
+    <div class="column2">
+        <button style="float: left;text-align: center; height: 35px"><a href="./search.php" style="text-decoration: none;color: black">Add Movie</a></button>
+        &nbsp;&nbsp;&nbsp;
+        <button style="float: right;height: 35px" onclick="confirmCheckout();">Checkout</button>
+    </div>
+</div>
+<?php } ?>
+</body>
+</html>

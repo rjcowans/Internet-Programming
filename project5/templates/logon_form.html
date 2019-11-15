@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <title>Login</title>
+    <script src="script.js"></script>
+</head>
+<h3>myMovies Xpress!</h3>
+<p>
+    Hello Please Enter the Proper Login Information
+
+</p>
+<p style="color: red">
+<?php
+    if ($message !== ""){
+        echo "\n",$message;
+    }
+    ?>
+</p>
+<form action="./logon.php" method="post" style="word-spacing: 0px" >
+    <label for="username">
+        Username <input type="text" id="username" name=username required>
+    </label>
+    <br><br>
+    <label for="password">
+       Password <input type="password" id="password" name=password required>
+    </label>
+    <input type="text" name="action" value="login" hidden>
+    <br><br>
+    <button type="submit">Login</button>
+    &nbsp;&nbsp;
+    <button type="reset">Reset</button>
+    &nbsp;&nbsp;
+    <a href="./logon.php?form=create">Create Account</a>
+    &nbsp;&nbsp;
+    <a href="./logon.php?form=forgot">Forgot Password</a>
+</form>
+<br>
+<br>
+<a href="../index.html">ePortfolio</a>
+</html>

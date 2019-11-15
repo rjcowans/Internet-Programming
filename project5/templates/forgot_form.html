@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOF I FORGOT SOMETHING</title>
+    <script src="script.js"></script>
+    <link  rel="stylesheet" type="text/css" href="../css/site.css">
+</head>
+<body style="text-align: center">
+<h2>myMovies Xpress!</h2>
+Looks like you forgot your password. Please Enter a Username in order help you regain access.<br><br>
+<form action="./logon.php" method="post">
+    <label>Username <input type="text" name="username" required> </label> <br> <br>
+    &nbsp;&nbsp;<button type="reset">Clear</button>
+    &nbsp;&nbsp;<button type="submit">Submit</button>
+    <input type="text" name="action" value="forgot" hidden>
+</form>
+<br>
+<button onclick="confirmCancel('forgot')">Cancel</button>
+<br>
+</body>
+</html>

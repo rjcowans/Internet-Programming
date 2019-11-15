@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stat Calculator</title>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <script src="script.js"></script>
+</head>
+<body style="margin: 0">
+<h2>Statistical Calculator </h2>
+<form onsubmit="return performStatistics();" id="submitMe">
+    <textarea id="input" required rows="5" cols="70" onsubmit="">
+</textarea>
+    <br>
+    <button type="submit">SUBMIT</button>
+    <button style="float: right" type="reset" onclick="">CLEAR</button>
+    <div class="container3" style="word-spacing: 10px">
+        <br><br>
+        <label for="mean">
+            Mean:
+            <input id="mean" type="text" readonly>
+        </label>
+        <br><br>
+        <label for="max">
+            Max:
+            <input style="alignment: right" id="max" type="text" readonly>
+        </label>
+        <br><br>
+        <label for="median">
+            Median:
+            <input style="alignment: right" id="median" type="text" readonly>
+        </label>
+        <br><br>
+        <label for="min">
+            Min:
+            <input style="alignment: right" id="min" type="text" readonly>
+        </label>
+        <br><br>
+        <label for="mode">
+            Mode:
+            <input style="alignment: right" id="mode" type="text" readonly>
+        </label>
+        <br><br>
+        <label for="stdev">
+            Std Dev:
+            <input style="alignment: right" id="stdev" type="text" readonly>
+        </label>
+        <br><br>
+        <label for="sum">
+            Sum:
+            <input id="sum" type="text" readonly>
+        </label>
+        <br><br>
+        <label for="var">
+            Variance:
+            <input style="alignment: right" id="var" type="text" readonly>
+        </label>
+    </div>
+</form>
+<h2>Other Pages</h2>
+<a href="../index.html">E-Portfolio</a>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Them</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+</head>
+<body>
+<br>
+<table>
+    <tr>
+        <th>Poster</th>
+        <th>Title(year)</th>
+        <?php if (!$forEmail) { ?>
+        <th>View Info</th>
+        <th>Remove</th>
+        <?php } ?>
+    </tr>
+    <?php foreach ($toReturn as $test) {
+        $parts = getMovieData($test);
+        if (!empty($parts)) {
+            $test1 = addslashes($parts["Title"]);
+            $test2 = $parts["IMDB_ID"];
+            $test3 = $parts["Poster"];
+            $test4 = $parts["ID"];
+            ?>
+            <tr>
+                <td style='width: 100px'><img alt="<?php echo $test1 . 'NO_POSTER'; ?>" src='<?php echo $test3; ?>'
+                                              height='100'></td>
+                <td><?php echo $test1 . "(" . $parts["Year"] . ")"; ?></td>
+                <?php if (!$forEmail) { ?>
+                    <td>
+                        <a href="javascript:void(0);" onclick='displayMovieInformation("<?php echo $test4; ?>");'>View
+                            More Info</a>
+                    </td>
+                    <td>
+                        <button class='p4B' onclick="confirmRemove('<?php echo $test1; ?>','<?php echo $test4; ?>');">X</button>
+                    </td>
+                <?php } ?>
+            </tr>
+        <?php }
+    } ?>
+</table>
+
+</body>
+</html>

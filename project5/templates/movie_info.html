@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE SCOOP ^o^</title>
+</head>
+<body>
+<div class='modal-header'>
+    <span class='close'>[Close]</span>
+    <h2><?php echo $movies["Title"]."(".$movies["Year"].")"; ?> Rated <?php echo $movies["Rating"]," ",$movies["Runtime"]; ?><br /><?php $movies["Genres"]; ?></h2>
+</div>
+<div class='modal-body'>
+    <p>Actors: <?php echo $movies["Actors"]; ?> <br />Directed By: <?php echo $movies["Director"]; ?> <br />Written By: <?php echo $movies["Writer"]; ?> </p>
+</div>
+<div class='modal-footer'>
+    <p>
+        <?php if (empty($movies)) { ?>
+            Invalid Movie ID!
+   <?php } else {
+            echo $movies["Plot"];
+        } ?> </p>
+</div>
+</body>
+</html>

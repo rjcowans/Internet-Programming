@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Cart WOO</title>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <script src="script.js"></script>
+</head>
+<div style="position:absolute;left:0;top: 0;" >
+    <?php echo "Welcome ",$_SESSION["displayName"]; ?>
+    <button id="p4B" onclick="confirmLogOut()">(Logout)</button>
+    </div>
+<body id="p4" style="text-align: center">
+<h2>myMovie Xpress!</h2>
+<?php apiCall($movieValues);?>
+<br>
+<div class="row">
+    <div class="column2">
+        <button  style="float: left;text-align: center; height: 35px"><a href="./search.php" style="text-decoration: none;color: black">Add Movie</a>
+        </button>
+        &nbsp;&nbsp;&nbsp;
+        <button style="float: right;height: 35px" onclick="confirmCheckout();">Checkout</button>
+    </div>
+</div>
+</body>
+</html>

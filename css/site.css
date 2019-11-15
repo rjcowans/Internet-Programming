@@ -1,0 +1,380 @@
+p {
+    word-wrap: break-word;
+    width: auto;
+    text-align: left;
+    align-content: center;
+    alignment: center;
+}
+
+.AM {
+    color: darkred;
+}
+
+#pd {
+    color: aquamarine;
+}
+
+
+.HI {
+    color: darkgreen;
+}
+
+
+.Degrees {
+    font-weight: bold;
+}
+
+.Class {
+    font-style: italic;
+}
+
+.link{
+    font-size: 100%;
+    target:"_blank";
+}
+
+.link:hover {
+    font-size: 150%;
+}
+
+.FirstLevel {
+    list-style: decimal;
+}
+
+.SecondLevel {
+    list-style: upper-alpha;
+}
+
+h2{
+    align-items: center;
+}
+
+head {
+    background: darkred;
+}
+
+html{
+    width: 100%;
+}
+
+
+
+tr:nth-child(even){
+    background: lightcoral;
+}
+
+.goodone {
+    background: ghostwhite !important;
+}
+
+.newtab  {
+    border: 1px solid ghostwhite;
+    border-collapse: collapse;
+    text-align: left;
+    width: 300px;
+    font-size: 15px;
+}
+
+.newtab2  {
+    border: 1px solid ghostwhite;
+    border-collapse: collapse;
+    width: 2000px;
+    alignment: left;
+    text-align: left;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    alignment: center;
+    text-align: center;
+    font-family: Arial,sans-serif;
+    padding: 5px;
+}
+
+.secondB {
+    background-color: ghostwhite;
+    text-align: left;
+    align-items: center;
+}
+
+body {
+    display: flex; !important;
+    flex-direction: column; !important;
+    width: 100%; !important;
+    background-color: ghostwhite; !important;
+    text-align: left; !important;
+    align-items: center; !important;
+    margin: 0;
+}
+
+.submiter {
+    display: block;
+    height: 130px;
+    padding: 0;
+    margin: 0;
+    background-color: ghostwhite;
+    border: none;
+    vertical-align: top;
+    width: 100px;
+}
+
+#close-image img {
+    display: block;
+    height: 130px;
+    width: 100px;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.spacing{
+    width: 500px;
+    text-align: left;
+}
+
+.spacing input{
+    float: left;
+    width: 70%;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: lightgreen;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color:  green;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: gray;
+}
+
+
+/* The container 2*/
+.container2 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container2 input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: gray;
+    /* Rotate */
+    transform: rotate(-45deg);
+    /* Rotate Origin */
+    transform-origin: 0 100%;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark2 {
+    background-color: lightblue;
+}
+
+/* When the radio button is checked, add a blue background */
+.container2 input:checked ~ .checkmark2 {
+    background-color:  blue;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container2 input:checked ~ .checkmark2:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container2 .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: gray;
+}
+
+.row {
+    display: flex;
+    flex-direction: column; !important;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px 10px;
+    height: 100px;
+}
+
+.column2 {
+    flex: 50%;
+    padding: 14px 28px;
+    height: 100px;
+    display: inline-block;
+}
+
+
+.container3 {
+    width: 500px;
+    clear: both;
+    text-align: right;
+}
+
+.container3 input {
+    width: 80%;
+    float: right;
+}
+
+#p4 {
+    background-color: ghostwhite;
+}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+.p4B{
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+/* The following CSS code blocks produce a pop-up modal window to display additional movie information */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}

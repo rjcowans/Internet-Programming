@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Me the Money (Payments)</title>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="secondB">
+    <h2 style="color: crimson;font-size: 50px">Enter Payment Information</h2>
+        <div class="row" style="word-spacing: 5px">
+            <label class="container" for="credit"> <img src="../images/AmEx.png" alt="AmEX" style="width: 50px;height: 50px">
+                <img src="../images/Discover.png" alt="Disc" style="width: 50px;height: 50px">
+                <img src="../images/MasterCard.png" alt="Mast" style="width: 50px;height: 50px">
+                <img src="../images/Visa.png" alt="Visa" style="width: 50px;height: 50px">
+                <input type="radio" onclick="updateForm(this)" name="paytype" value="credit-card" id="credit" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" for="apps">
+                <img src="../images/PayPal.png" alt="PayP" style="width: 50px;height: 50px">
+                <input type="radio" onclick="updateForm(this)" name="paytype" value="paypal" id="apps">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    <form onsubmit="return validateForm();">
+        <div class="spacing">
+            <table id="payp" style="display: none;width: 500px;border: none">
+                <tr class="goodone" ><td class="newtab">Email Address:</td><td class="newtab2"><input type="text" id="paL1"></td></tr>
+                <tr class="goodone"><td class="newtab">Password:</td><td class="newtab2"><input type="password" id="pal2"></td></tr>
+            </table>
+        <table id="creditcard" style="width: 700px;border: none">
+            <tr class="goodone"><td class="newtab">First Name:</td><td class="newtab2"><input type="text" id="cc1r" required></td></tr>
+            <tr class="goodone"><td class="newtab">Last Name:</td><td class="newtab2"><input type="text" id="cc2r" required></td></tr>
+            <tr class="goodone"><td class="newtab">Card Number:</td><td class="newtab2"><input type="text" id="cc3r" required></td></tr>
+            <tr class="goodone"><td class="newtab">Cardholder Name:</td><td class="newtab2"><input type="text" required id="cc4r"></td></tr>
+            <tr class="goodone"><td class="newtab">Expiration:</td><td class="newtab2"><input type="month" min="2017-01" max="2020-12" required id="cc10r" value="2019-04"></td></tr>
+            <tr class="goodone"><td class="newtab"><a href="https://en.wikipedia.org/wiki/Card_security_code" target="_blank">CVV2/CVC:</a></td><td class="newtab2"><input type="text" id="cc5r" class required></td></tr>
+            <tr class="goodone"><td class="newtab">Address:</td><td class="newtab2"><input type="text" id="cc6r" required></td></tr>
+            <tr class="goodone"><td class="newtab">Address 2:</td><td class="newtab2"><input type="text"></td></tr>
+            <tr class="goodone"><td class="newtab">City:</td><td class="newtab2"><input type="text" id="cc7r" required></td></tr>
+            <tr class="goodone"><td class="newtab">State:</td><td class="newtab2"><select id="stat">
+                    <option>Select State</option>
+                    <option>AL</option>
+                    <option>AK</option>
+                    <option>AZ</option>
+                    <option>AR</option>
+                    <option>CA</option>
+                    <option>CO</option>
+                    <option>CT</option>
+                    <option>DE</option>
+                    <option>FL</option>
+                    <option>GA</option>
+                    <option>HI</option>
+                    <option>ID</option>
+                    <option>IL</option>
+                    <option>IN</option>
+                    <option>IA</option>
+                    <option>KS</option>
+                    <option>KY</option>
+                    <option>LA</option>
+                    <option>ME</option>
+                    <option>MD</option>
+                    <option>MA</option>
+                    <option>MI</option>
+                    <option>MS</option>
+                    <option>MO</option>
+                    <option>MT</option>
+                    <option>NE</option>
+                    <option>NV</option>
+                    <option>NH</option>
+                    <option>NJ</option>
+                    <option>NM</option>
+                    <option>NY</option>
+                    <option>NC</option>
+                    <option>ND</option>
+                    <option>OH</option>
+                    <option>OK</option>
+                    <option>OR</option>
+                    <option>PA</option>
+                    <option>RI</option>
+                    <option>SC</option>
+                    <option>SD</option>
+                    <option>TN</option>
+                    <option>TX</option>
+                    <option>UT</option>
+                    <option>VT</option>
+                    <option>MN</option>
+                    <option>VA</option>
+                    <option>WA</option>
+                    <option>WV</option>
+                    <option>WI</option>
+                    <option>WY</option>
+            </select></td></tr>
+            <tr class="goodone"><td class="newtab">Zip:</td><td class="newtab2"> <input type="text" id="cc8r" required></td></tr>
+            <tr class="goodone"><td class="newtab">Email Address:</td><td class="newtab2"><input type="text" id="cc9r" required></td></tr>
+        </table>
+        <button type="submit" class="submiter" id="close-image" value="submit"><img src="../images/PayNow.png"></button>
+        </div>
+    </form>
+
+<br>
+<br>
+</body>
+<div style="float: left">
+    <a href="../index.html">E Portfolio</a>
+</div>
+</html>

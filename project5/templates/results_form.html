@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Results ^_^</title>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <script src="script.js"></script>
+</head>
+<div style="position:absolute;left:0;top: 0;" >
+    <?php echo "Welcome ",$_SESSION["displayName"]; ?>
+    <button class="p4B" onclick="confirmLogOut()">(Logout)</button>
+</div>
+<body id="p4" style="text-align: center">
+<h2>myMovie Xpress!</h2>
+<?php
+echo count($array)." Movies Found";
+if(count($array) !== 0){
+    results($array);
+}
+?>
+<br>
+<br>
+<button><a href="./index.php" style="text-decoration: none;color: black">Cancel</a></button>
+</body>
+</html>
